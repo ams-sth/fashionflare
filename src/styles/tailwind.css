@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+	--breakpoint-*: initial;
+	--breakpoint-ssm: 426px;
+	--breakpoint-sm: 567px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 904px;
+	--breakpoint-xl: 1000px;
+	--breakpoint-2xl: 1100px;
+
+	--font-sans: "Roboto Condensed", serif;
+	--font-georgia: Georgia, serif;
+
+	--background-image-firstSlideBg: url("../assets/images/FirstSlide.jpg");
+	--background-image-searchBg: url("../assets/images/search/background.jpg");
+}
+
+@utility container {
+	margin-inline: auto;
+	padding-inline: 0.1rem;
+}
