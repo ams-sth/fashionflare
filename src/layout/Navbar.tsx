@@ -48,7 +48,7 @@ const Navbar = ({ logo, bg, shadow, textColor }: NavbarProps) => {
 	];
 
 	return (
-		<div
+		<nav
 			className={`fixed w-[100%] z-[30]`}
 			style={{
 				background: bg,
@@ -58,7 +58,7 @@ const Navbar = ({ logo, bg, shadow, textColor }: NavbarProps) => {
 			}}
 		>
 			<div className="container px-4 top-0">
-				<div className="flex flex-row justify-between h-[4rem] items-center">
+				<div className="flex flex-row justify-around h-[4rem] items-center">
 					<div>
 						<img src={logo} alt="Logo" />
 					</div>
@@ -140,7 +140,7 @@ const Navbar = ({ logo, bg, shadow, textColor }: NavbarProps) => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</nav>
 	);
 };
 

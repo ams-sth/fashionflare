@@ -16,14 +16,14 @@ const Advertisement = () => {
 		slidesToScroll: 1,
 	};
 	return (
-		<div className="bg-[#FFFF]">
+		<div>
 			<Slider {...settings}>
 				{ads.map((about) => (
 					<div
 						key={about.id}
 						className="relative -top-4 bg-[#1F78F0] lg:bg-firstSlideBg bg-no-repeat bg-cover h-screen"
 					>
-						<div className="absolute top-[35%] right-[10%] flex flex-col gap-4 px-4 text-left">
+						<div className="absolute top-[35%] right-0 flex flex-col gap-4 px-4 text-left">
 							<h1 className="text-6xl font-bold max-w-xs text-yellow-300">
 								{about.title}
 							</h1>
@@ -31,10 +31,7 @@ const Advertisement = () => {
 								{about.description}
 							</p>
 
-							<button
-								type="button"
-								className="rounded-3xl bg-white w-[30%] py-2"
-							>
+							<button className="rounded-3xl bg-white w-[30%] py-2">
 								{about.button}
 							</button>
 						</div>
